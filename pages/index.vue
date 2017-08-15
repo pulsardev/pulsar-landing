@@ -13,6 +13,8 @@
       </div>
     </section>
 
+    <!--<contact></contact>-->
+
     <footer class="footer">
       <div class="container">
         <div class="content has-text-centered">
@@ -36,9 +38,11 @@
   import Logo from '~/components/Logo.vue'
   import NavbarTop from '../components/NavbarTop.vue'
   import HeroIndex from '../components/HeroIndex.vue'
+  import Contact from '../components/Contact.vue'
 
   export default {
     components: {
+      Contact,
       HeroIndex,
       NavbarTop,
       Logo

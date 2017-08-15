@@ -37,5 +37,8 @@ module.exports = {
   },
   css: [
     '@/assets/scss/main.scss'
+  ],
+  plugins: [
+    { src: '~/plugins/smooth-scroll.js', ssr: false }
   ]
 }
