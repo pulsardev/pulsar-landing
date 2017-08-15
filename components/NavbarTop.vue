@@ -7,27 +7,21 @@
             <h1 class="title is-4 is-uppercase has-text-grey-lighter">Pulsar</h1>
           </a>
 
-          <div class="navbar-burger burger" data-target="c-navbar-top__menu">
+          <div class="navbar-burger burger" data-target="c-navbar-top__menu" ref="c-navbar-top__toggle-button" @click="toggleMenu">
             <span></span>
             <span></span>
             <span></span>
           </div>
         </div>
 
-        <div id="c-navbar-top__menu" class="navbar-menu">
+        <div id="c-navbar-top__menu" ref="c-navbar-top__menu" class="navbar-menu">
           <div class="navbar-end">
-            <a href="#" class="nav-item has-text-white is-uppercase">About</a>
+            <a href="#about" class="nav-item has-text-white is-uppercase">About</a>
             <a href="#" class="nav-item has-text-white is-uppercase">Contact</a>
 
-            <div class="navbar-item">
-              <div class="field is-grouped">
-                <p class="control">
-                  <a class="button is-primary is-outlined">
-                    <span class="icon"><i class="fa fa-github"></i></span>
-                  </a>
-                </p>
-              </div>
-            </div>
+            <a class="navbar-item has-text-white" href="https://github.com/pulsardev" target="_blank">
+              <span class="icon"><i class="fa fa-github"></i></span>
+            </a>
           </div>
         </div>
       </nav>
@@ -54,6 +48,18 @@
           } else {
             navbarTop.classList.remove(hasBackgroundClass)
           }
+        }
+      },
+      toggleMenu () {
+        let toggleButton = this.$refs['c-navbar-top__toggle-button']
+        let menu = this.$refs['c-navbar-top__menu']
+
+        if (toggleButton.classList.contains('is-active')) {
+          toggleButton.classList.remove('is-active')
+          menu.classList.remove('is-active')
+        } else {
+          toggleButton.classList.add('is-active')
+          menu.classList.add('is-active')
         }
       }
     },

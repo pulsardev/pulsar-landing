@@ -4,7 +4,7 @@
 
     <hero-index></hero-index>
 
-    <section class="section">
+    <section id="about" class="section">
       <div class="container">
         <h1 class="title">Section</h1>
         <h2 class="subtitle">
