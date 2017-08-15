@@ -34,7 +34,8 @@
     name: 'navbar-top',
     data () {
       return {
-        scrolled: false
+        lastKnownScrollPosition: 0,
+        ticking: false
       }
     },
     methods: {
@@ -43,7 +44,7 @@
         let navbarTop = this.$refs['c-navbar-top']
 
         if (process.browser) {
-          if (window.scrollY > 100) {
+          if (this.lastKnownScrollPosition > 100) {
             navbarTop.classList.add(hasBackgroundClass)
           } else {
             navbarTop.classList.remove(hasBackgroundClass)
@@ -61,11 +62,21 @@
           toggleButton.classList.add('is-active')
           menu.classList.add('is-active')
         }
+      },
+      throttleScrollHandling () {
+        this.lastKnownScrollPosition = window.scrollY
+        if (!this.ticking) {
+          window.requestAnimationFrame(() => {
+            this.handleScroll()
+            this.ticking = false
+          })
+        }
+        this.ticking = true
       }
     },
     created () {
       if (process.browser) {
-        window.addEventListener('scroll', this.handleScroll)
+        window.addEventListener('scroll', this.throttleScrollHandling)
       }
     },
     mounted () {
@@ -73,7 +84,7 @@
     },
     destroyed () {
       if (process.browser) {
-        window.removeEventListener('scroll', this.handleScroll)
+        window.removeEventListener('scroll', this.throttleScrollHandling)
       }
     }
   }
