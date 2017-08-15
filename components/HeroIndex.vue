@@ -9,7 +9,7 @@
           We make modern web applications and websites.
         </h2>
         <p class="field">
-          <a class="button is-large is-light is-outlined">
+          <a href="#about" class="button is-large is-light is-outlined" v-smooth-scroll>
             <span class="icon is-medium"><i class="fa fa-angle-double-down"></i></span>
           </a>
         </p>

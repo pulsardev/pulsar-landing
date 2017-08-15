@@ -15,7 +15,8 @@
   "dependencies": {
     "bulma": "^0.5.1",
     "font-awesome": "^4.7.0",
-    "nuxt": "^1.0.0-rc3"
+    "nuxt": "^1.0.0-rc3",
+    "smoothscroll-polyfill": "^0.3.6"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",

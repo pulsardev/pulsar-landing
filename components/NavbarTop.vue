@@ -16,8 +16,8 @@
 
         <div id="c-navbar-top__menu" ref="c-navbar-top__menu" class="navbar-menu">
           <div class="navbar-end">
-            <a href="#about" v-smooth-scroll class="nav-item has-text-white is-uppercase">About</a>
-            <a href="#contact" v-smooth-scroll class="nav-item has-text-white is-uppercase">Contact</a>
+            <a href="#about" class="nav-item has-text-white is-uppercase" v-smooth-scroll>About</a>
+            <a href="#contact" class="nav-item has-text-white is-uppercase" v-smooth-scroll>Contact</a>
 
             <a class="navbar-item has-text-white" href="https://github.com/pulsardev" target="_blank">
               <span class="icon"><i class="fa fa-github"></i></span>
