@@ -5,9 +5,12 @@
 
 // 2. Set your own initial variables
 $family-sans-serif: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$radius-small: 0;
+$radius: 0;
+$radius-large: 0;
 
 // 3. Set the derived variables
-$dark: $black;
+$dark: black;
 $family-primary: $family-sans-serif;
 
 // 4. Import the rest of Bulma
@@ -19,3 +22,8 @@ $fa-font-path:   "~font-awesome/fonts";
 
 // Custom variables
 $family-secondary: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Custom Bulma style
+.title {
+  font-family: $family-secondary;
+}

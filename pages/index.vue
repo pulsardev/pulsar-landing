@@ -2,18 +2,7 @@
   <div>
     <navbar-top></navbar-top>
 
-    <section class="hero is-dark is-fullheight">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            Full Height title
-          </h1>
-          <h2 class="subtitle">
-            Full Height subtitle
-          </h2>
-        </div>
-      </div>
-    </section>
+    <hero-index></hero-index>
 
     <section class="section">
       <div class="container">
@@ -46,9 +35,11 @@
 <script>
   import Logo from '~/components/Logo.vue'
   import NavbarTop from '../components/NavbarTop.vue'
+  import HeroIndex from '../components/HeroIndex.vue'
 
   export default {
     components: {
+      HeroIndex,
       NavbarTop,
       Logo
     }
