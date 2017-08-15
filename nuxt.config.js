@@ -39,6 +39,7 @@ module.exports = {
     '@/assets/scss/main.scss'
   ],
   plugins: [
+    { src: '~/plugins/scroll-spy.js', ssr: false },
     { src: '~/plugins/smooth-scroll.js', ssr: false }
   ]
 }

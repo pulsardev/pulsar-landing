@@ -11,7 +11,8 @@ Vue.directive('smooth-scroll', {
       el.addEventListener('click', (e) => {
         e.preventDefault()
         let elementAbsolutePosition = targetElement.getBoundingClientRect()
-        window.scroll({top: elementAbsolutePosition.top, left: 0, behavior: 'smooth'})
+        // TODO: pass the offset (the navbar height, 52 here) as an argument
+        window.scrollBy({top: elementAbsolutePosition.top - 52, left: 0, behavior: 'smooth'})
       })
     }
   }

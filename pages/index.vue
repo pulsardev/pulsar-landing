@@ -13,7 +13,7 @@
       </div>
     </section>
 
-    <!--<contact></contact>-->
+    <contact></contact>
 
     <footer class="footer">
       <div class="container">

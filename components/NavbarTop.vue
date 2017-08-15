@@ -16,8 +16,8 @@
 
         <div id="c-navbar-top__menu" ref="c-navbar-top__menu" class="navbar-menu">
           <div class="navbar-end">
-            <a href="#about" class="nav-item has-text-white is-uppercase" v-smooth-scroll>About</a>
-            <a href="#contact" class="nav-item has-text-white is-uppercase" v-smooth-scroll>Contact</a>
+            <a href="#about" class="nav-item has-text-white is-uppercase" v-smooth-scroll v-scroll-spy>About</a>
+            <a href="#contact" class="nav-item has-text-white is-uppercase" v-smooth-scroll v-scroll-spy>Contact</a>
 
             <a class="navbar-item has-text-white" href="https://github.com/pulsardev" target="_blank">
               <span class="icon"><i class="fa fa-github"></i></span>
@@ -44,7 +44,7 @@
         let navbarTop = this.$refs['c-navbar-top']
 
         if (process.browser) {
-          if (this.lastKnownScrollPosition > 100) {
+          if (window.scrollY > 100) {
             navbarTop.classList.add(hasBackgroundClass)
           } else {
             navbarTop.classList.remove(hasBackgroundClass)
@@ -114,5 +114,9 @@
   .c-navbar-top--has-background {
     background-color: $dark;
     padding: 0;
+  }
+
+  .c-nav-item--is-active {
+    background: $grey-darker
   }
 </style>
