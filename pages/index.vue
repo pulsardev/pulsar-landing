@@ -4,14 +4,9 @@
 
     <hero-index></hero-index>
 
-    <section id="about" class="section">
-      <div class="container">
-        <h1 class="title">Section</h1>
-        <h2 class="subtitle">
-          A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-        </h2>
-      </div>
-    </section>
+    <projects-showcase></projects-showcase>
+
+    <hr>
 
     <contact></contact>
 
@@ -39,9 +34,11 @@
   import NavbarTop from '../components/NavbarTop.vue'
   import HeroIndex from '../components/HeroIndex.vue'
   import Contact from '../components/Contact.vue'
+  import ProjectsShowcase from '../components/ProjectsShowcase.vue'
 
   export default {
     components: {
+      ProjectsShowcase,
       Contact,
       HeroIndex,
       NavbarTop,

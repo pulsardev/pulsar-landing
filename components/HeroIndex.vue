@@ -10,7 +10,7 @@
         </h2>
         <p class="field">
           <a href="#about" class="button is-large is-light is-outlined" v-smooth-scroll>
-            <span class="icon is-medium"><i class="fa fa-angle-double-down"></i></span>
+            <span class="icon is-medium"><i class="fa fa-angle-down"></i></span>
           </a>
         </p>
       </div>
