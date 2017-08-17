@@ -3,7 +3,7 @@
     <div class="container">
       <nav class="navbar is-transparent">
         <div class="navbar-brand">
-          <a class="navbar-item" href="http://bulma.io">
+          <a class="navbar-item" href="#pulsar" v-smooth-scroll v-scroll-spy>
             <h1 class="title is-4 is-uppercase has-text-grey-lighter">Pulsar</h1>
           </a>
 
