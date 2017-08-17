@@ -40,3 +40,6 @@ jobs:
 
       - run: npm run generate
       - run: surge ./dist --domain https://pulsar.surge.sh
+
+      # run tests!
+      - run: npm test
