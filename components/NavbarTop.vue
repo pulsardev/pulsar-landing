@@ -1,7 +1,7 @@
 <template>
   <div class="c-navbar-top" ref="c-navbar-top">
     <div class="container">
-      <nav class="navbar is-transparent">
+      <nav class="navbar is-transparent has-shadow">
         <div class="navbar-brand">
           <a class="navbar-item" href="#pulsar" v-smooth-scroll v-scroll-spy>
             <h1 class="title is-4 is-uppercase has-text-grey-lighter">Pulsar</h1>
@@ -17,6 +17,7 @@
         <div id="c-navbar-top__menu" ref="c-navbar-top__menu" class="navbar-menu">
           <div class="navbar-end">
             <a href="#about" class="nav-item has-text-white is-uppercase" v-smooth-scroll v-scroll-spy>About</a>
+            <a href="#team" class="nav-item has-text-white is-uppercase" v-smooth-scroll v-scroll-spy>Team</a>
             <a href="#contact" class="nav-item has-text-white is-uppercase" v-smooth-scroll v-scroll-spy>Contact</a>
 
             <a class="navbar-item has-text-white" href="https://github.com/pulsardev" target="_blank">
@@ -112,7 +113,7 @@
   }
 
   .c-navbar-top--has-background {
-    background-color: $dark;
+    background-color: $black;
     padding: 0;
   }
 
