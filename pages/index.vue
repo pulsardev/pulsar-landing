@@ -6,7 +6,7 @@
 
     <projects-showcase></projects-showcase>
 
-    <hr>
+    <hr class="is-marginless">
 
     <team></team>
 

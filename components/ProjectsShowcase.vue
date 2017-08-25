@@ -1,13 +1,8 @@
 <template>
-  <section id="about" class="section is-medium">
-    <div class="container">
-      <h1 class="title">Projects</h1>
-      <h2 class="subtitle">
-        A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-      </h2>
-
-      <div class="tile is-ancestor">
-        <div class="tile is-vertical is-parent">
+  <div class="columns is-gapless is-marginless">
+    <div class="column is-half">
+      <div class="tile" style="height: 100%">
+        <div class="tile" style="flex-direction: column">
           <div class="tile is-child box">
             <p class="title">Netsix</p>
           </div>
@@ -15,14 +10,23 @@
             <p class="title">Mendelable</p>
           </div>
         </div>
-        <div class="tile is-parent">
+        <div class="tile">
           <div class="tile is-child box">
             <p class="title">Freatle</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
+
+    <div class="column is-half">
+      <section id="about" class="section is-medium">
+        <h1 class="title">Projects</h1>
+        <h2 class="subtitle">
+          A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+        </h2>
+      </section>
+    </div>
+  </div>
 </template>
 
 <script>
