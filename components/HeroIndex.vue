@@ -16,7 +16,7 @@
           We make modern web applications and websites.
         </h2>
         <p class="field">
-          <a href="#about" class="button is-large is-light is-outlined" v-smooth-scroll>
+          <a href="#about" class="button is-large is-light is-outlined" aria-label="View more" v-smooth-scroll>
             <span class="icon is-medium"><i class="fa fa-angle-down"></i></span>
           </a>
         </p>

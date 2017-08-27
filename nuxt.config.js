@@ -45,5 +45,8 @@ module.exports = {
     { src: '~/plugins/scroll-spy.js', ssr: false },
     { src: '~/plugins/smooth-scroll.js', ssr: false },
     '~/plugins/vee-validate.js'
+  ],
+  modules: [
+    ['@nuxtjs/google-analytics', {ua: 'UA-99632110-3'}]
   ]
 }

@@ -13,7 +13,7 @@
 
     <div class="c-projects__showcase tile">
       <div class="tile is-5 is-vertical">
-        <figure class="c-projects__thumbnail image tile">
+        <figure class="c-projects__thumbnail image tile" @click="openUrl('https://github.com/pulsardev/netsix')">
           <img src="~/assets/images/projects/netsix.png" alt="Netsix">
           <figcaption class="has-text-centered">
             <h2 class="title">Netsix</h2>
@@ -21,7 +21,7 @@
           </figcaption>
         </figure>
 
-        <figure class="c-projects__thumbnail image tile">
+        <figure class="c-projects__thumbnail image tile" @click="openUrl('https://github.com/pulsardev/mendelable')">
           <img src="~/assets/images/projects/mendelable.png" alt="Mendelable">
           <figcaption class="has-text-centered">
             <h2 class="title">Mendelable</h2>
@@ -31,7 +31,7 @@
       </div>
 
       <div class="tile">
-        <figure class="c-projects__thumbnail image tile">
+        <figure class="c-projects__thumbnail image tile" @click="openUrl('https://freatle.surge.sh/')">
           <img src="~/assets/images/projects/freatle.png" alt="Freatle">
           <figcaption class="has-text-centered">
             <h2 class="title">Freatle</h2>
@@ -45,7 +45,16 @@
 
 <script>
   export default {
-    name: 'projects-showcase'
+    name: 'projects-showcase',
+    methods: {
+      openUrl (url) {
+        if (process.browser) {
+          window.open(url)
+        }
+
+        return false
+      }
+    }
   }
 </script>
 

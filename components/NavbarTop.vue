@@ -20,7 +20,7 @@
             <a href="#team" class="navbar-item has-text-white is-uppercase" v-smooth-scroll v-scroll-spy>Team</a>
             <a href="#contact" class="navbar-item has-text-white is-uppercase" v-smooth-scroll v-scroll-spy>Contact</a>
 
-            <a class="navbar-item has-text-white" href="https://github.com/pulsardev" target="_blank">
+            <a class="navbar-item has-text-white" href="https://github.com/pulsardev" target="_blank" rel="noopener">
               <span class="icon"><i class="fa fa-github"></i></span>
             </a>
           </div>

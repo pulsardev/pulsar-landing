@@ -23,7 +23,7 @@
         </div>
 
         <div class="field">
-          <label class="label">Message</label>
+          <label class="label" for="message">Message</label>
           <div class="control">
             <textarea v-validate="'required'" v-model="message" class="textarea" :class="{ 'is-danger': errors.has('message') }" id="message" name="message" placeholder="Message" required></textarea>
           </div>

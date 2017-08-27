@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@nuxtjs/google-analytics@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/google-analytics/-/google-analytics-1.0.0.tgz#aa48d47237fa46d1decc5a47ec1bf6a67049640f"
+
 "@nuxtjs/youch@3.0.2":
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/@nuxtjs/youch/-/youch-3.0.2.tgz#03fff829ca45bd1c3ece84c08270f9686229dd4a"
