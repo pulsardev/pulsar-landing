@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card has-text-left">
     <div class="card-image">
       <figure class="image is-4by3">
         <img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
@@ -9,21 +9,21 @@
       <div class="media">
         <div class="media-left">
           <figure class="image is-48x48">
-            <img src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
+            <img class="c-avatar" :src="person.avatar" alt="Image">
           </figure>
         </div>
         <div class="media-content">
           <p class="title is-4">{{ person.name }}</p>
-          <p class="subtitle is-6">@johnsmith</p>
+          <p class="subtitle is-6">@{{ person.id }}</p>
         </div>
       </div>
 
-      <div class="content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-        <a>#css</a> <a>#responsive</a>
+      <div class="content has-text-right">
+        <span v-html="person.description"></span>
         <br>
-        <small>11:09 PM - 1 Jan 2016</small>
+        <span v-for="(skill, index)  in person.skills">
+          <a style="text-transform: lowercase">#{{ skill }}</a><span v-if="index !== person.skills.length - 1">, </span>
+        </span>
       </div>
     </div>
   </div>
@@ -35,3 +35,9 @@
     props: ['person']
   }
 </script>
+
+<style lang="scss" scoped>
+  .c-avatar {
+    border-radius: 50%;
+  }
+</style>

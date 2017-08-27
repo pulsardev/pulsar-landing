@@ -1,11 +1,11 @@
 <template>
   <div>
-    <section id="about" class="hero is-medium is-dark" style="background-color: #0a0a0a">
+    <section id="about" class="hero is-medium is-dark" style="background-color: hsl(0, 0%, 8%)">
       <div class="hero-body">
         <div class="container has-text-centered">
           <h1 class="title is-spaced">Projects</h1>
           <h2 class="subtitle">
-            A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+            We deliver new quality projects <strong>regularly</strong>. Here are some of them.
           </h2>
         </div>
       </div>

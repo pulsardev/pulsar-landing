@@ -1,17 +1,19 @@
 <template>
-  <section id="team" class="section is-medium">
-    <div class="container">
-      <h1 class="title">Team</h1>
+  <section id="about" class="hero is-medium" style="background-color: whitesmoke">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-spaced">Team</h1>
 
-      <div class="columns">
-        <div class="column">
-          <team-person :person="persons[0]"></team-person>
-        </div>
-        <div class="column">
-          <team-person :person="persons[1]"></team-person>
-        </div>
-        <div class="column">
-          <team-person :person="persons[2]"></team-person>
+        <div class="columns">
+          <div class="column">
+            <team-person :person="persons[0]"></team-person>
+          </div>
+          <div class="column">
+            <team-person :person="persons[1]"></team-person>
+          </div>
+          <div class="column">
+            <team-person :person="persons[2]"></team-person>
+          </div>
         </div>
       </div>
     </div>
@@ -30,13 +32,25 @@
       return {
         persons: [
           {
-            name: 'Mathieu Morainville'
+            id: 'mmorainville',
+            name: 'Mathieu Morainville',
+            avatar: 'https://avatars1.githubusercontent.com/u/1155743?v=4&s=460',
+            description: '<em>Vueman</em>',
+            skills: ['Vue.js', 'JavaScript', 'Design', 'Node.js']
           },
           {
-            name: 'Sylver-John Imhoff'
+            id: 'sylver-john',
+            name: 'Sylver-John Imhoff',
+            avatar: 'https://avatars1.githubusercontent.com/u/6161547?v=4&s=460',
+            description: '<em>Golang lover</em>',
+            skills: ['Golang', 'Vue.js', 'JavaScript']
           },
           {
-            name: 'Guillaume Migeon'
+            id: 'Outpox',
+            name: 'Guillaume Migeon',
+            avatar: 'https://avatars2.githubusercontent.com/u/3439246?v=4&s=460',
+            description: '<em>Extension maker</em>',
+            skills: ['Vue.js', 'JavaScript', 'Node.js']
           }
         ]
       }
