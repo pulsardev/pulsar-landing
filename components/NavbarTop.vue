@@ -16,7 +16,7 @@
 
         <div id="c-navbar-top__menu" ref="c-navbar-top__menu" class="navbar-menu">
           <div class="navbar-end">
-            <a href="#about" class="nav-item has-text-white is-uppercase" v-smooth-scroll v-scroll-spy>About</a>
+            <a href="#about" class="nav-item has-text-white is-uppercase" v-smooth-scroll v-scroll-spy>Projects</a>
             <a href="#team" class="nav-item has-text-white is-uppercase" v-smooth-scroll v-scroll-spy>Team</a>
             <a href="#contact" class="nav-item has-text-white is-uppercase" v-smooth-scroll v-scroll-spy>Contact</a>
 
