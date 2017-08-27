@@ -6,24 +6,24 @@
       <div class="field">
         <label class="label">Name</label>
         <div class="control">
-          <input class="input" type="text" placeholder="Text input">
+          <input class="input" type="text" placeholder="Name">
         </div>
       </div>
 
       <div class="field">
-        <label class="label">Email</label>
+        <label class="label" for="email">Email</label>
         <div class="control has-icons-left has-icons-right">
-          <input class="input is-danger" type="text" placeholder="Email input">
+          <input v-validate="'required|email'" class="input" :class="{ 'is-danger': errors.has('email') }" name="email" type="text" placeholder="Email">
           <span class="icon is-small is-left has-text-grey"><i class="fa fa-envelope"></i></span>
-          <span class="icon is-small is-right has-text-grey"><i class="fa fa-warning"></i></span>
+          <span v-show="errors.has('email')" class="icon is-small is-right has-text-grey"><i class="fa fa-warning"></i></span>
         </div>
-        <p class="help is-danger">This email is invalid</p>
+        <span v-show="errors.has('email')" class="help is-danger">{{ errors.first('email') }}</span>
       </div>
 
       <div class="field">
         <label class="label">Message</label>
         <div class="control">
-          <textarea class="textarea" placeholder="Textarea"></textarea>
+          <textarea class="textarea" placeholder="Message"></textarea>
         </div>
       </div>
 
@@ -41,6 +41,7 @@
 
 <script>
   export default {
+    $validates: true,
     name: 'contact'
   }
 </script>

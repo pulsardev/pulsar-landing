@@ -3,11 +3,11 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'pulsar-landing',
+    title: 'Pulsar',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+      { hid: 'description', name: 'description', content: 'Pulsar - We make modern web applications and websites' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -33,13 +33,17 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+    vendor: [
+      'vee-validate'
+    ]
   },
   css: [
     '@/assets/scss/main.scss'
   ],
   plugins: [
     { src: '~/plugins/scroll-spy.js', ssr: false },
-    { src: '~/plugins/smooth-scroll.js', ssr: false }
+    { src: '~/plugins/smooth-scroll.js', ssr: false },
+    '~/plugins/vee-validate.js'
   ]
 }
