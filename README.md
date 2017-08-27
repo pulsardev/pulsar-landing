@@ -1,6 +1,14 @@
-# pulsar-landing
+# Pulsar Landing
 
-> Nuxt.js project
+> The landing page for Pulsar.
+> Made with Bulma, Vue.js and Nuxt.js.
+
+[![Pulsar](./screenshot.png "Pulsar")](https://pulsar.surge.sh/)
+
+## Table of Contents
+
+- [Build Setup](#build-setup)
+- [Something Missing?](#something-missing)
 
 ## Build Setup
 
@@ -20,3 +28,7 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+
+## Something Missing?
+
+If you have a feature request or found a bug, [let me know](https://github.com/pulsardev/pulsar-landing/issues).
