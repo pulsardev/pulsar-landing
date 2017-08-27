@@ -2,7 +2,7 @@
   <div class="card has-text-left">
     <div class="card-image">
       <figure class="image is-4by3">
-        <img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
+        <img :src="person.image" alt="Image">
       </figure>
     </div>
     <div class="card-content">

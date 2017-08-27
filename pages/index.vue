@@ -12,11 +12,11 @@
 
     <contact></contact>
 
-    <footer class="footer">
-      <div class="container">
+    <footer class="footer" style="background-color: hsl(0, 0%, 8%)">
+      <div class="container has-text-grey">
         <div class="content has-text-centered">
           <p>
-            <strong>Pulsar</strong> is a group of <a href="#team" v-smooth-scroll>developers</a>. The source code is licensed
+            <strong class="has-text-grey">Pulsar</strong> is a group of <a href="#team" v-smooth-scroll>developers</a>. The source code is licensed
             <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
             is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
           </p>

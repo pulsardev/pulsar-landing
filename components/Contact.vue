@@ -1,7 +1,7 @@
 <template>
-  <section id="contact" class="section is-medium">
+  <section id="contact" class="section is-medium" style="background-color: rgba(0, 0, 0, 0.7)">
     <div class="container">
-      <h1 class="title">Contact</h1>
+      <h1 class="title is-spaced has-text-centered has-text-grey-lighter">Contact</h1>
 
       <div class="field">
         <label class="label">Name</label>
@@ -13,9 +13,9 @@
       <div class="field">
         <label class="label">Email</label>
         <div class="control has-icons-left has-icons-right">
-          <input class="input is-danger" type="text" placeholder="Email input" value="hello@">
-          <span class="icon is-small is-left"><i class="fa fa-envelope"></i></span>
-          <span class="icon is-small is-right"><i class="fa fa-warning"></i></span>
+          <input class="input is-danger" type="text" placeholder="Email input">
+          <span class="icon is-small is-left has-text-grey"><i class="fa fa-envelope"></i></span>
+          <span class="icon is-small is-right has-text-grey"><i class="fa fa-warning"></i></span>
         </div>
         <p class="help is-danger">This email is invalid</p>
       </div>
@@ -32,7 +32,7 @@
           <button class="button is-primary">Submit</button>
         </div>
         <div class="control">
-          <button class="button is-link">Cancel</button>
+          <button class="button is-light">Cancel</button>
         </div>
       </div>
     </div>
@@ -44,3 +44,18 @@
     name: 'contact'
   }
 </script>
+
+<style lang="scss" scoped>
+  .input, .textarea {
+    background-color: #363636;
+    color: #dbdbdb;
+  }
+
+  .input:not(.is-danger), .textarea:not(.is-danger) {
+    border: none;
+  }
+
+  .label {
+    color: #b5b5b5;
+  }
+</style>

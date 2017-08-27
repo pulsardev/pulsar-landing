@@ -4,7 +4,7 @@
       <nav class="navbar is-transparent has-shadow">
         <div class="navbar-brand">
           <a class="navbar-item" href="#pulsar" v-smooth-scroll v-scroll-spy>
-            <h1 class="title is-4 is-uppercase has-text-grey-lighter">Pulsar</h1>
+            <h1 class="title is-4 is-uppercase has-text-white">Pulsar</h1>
           </a>
 
           <div class="navbar-burger burger" data-target="c-navbar-top__menu" ref="c-navbar-top__toggle-button" @click="toggleMenu">
@@ -16,9 +16,9 @@
 
         <div id="c-navbar-top__menu" ref="c-navbar-top__menu" class="navbar-menu">
           <div class="navbar-end">
-            <a href="#about" class="nav-item has-text-white is-uppercase" v-smooth-scroll v-scroll-spy>Projects</a>
-            <a href="#team" class="nav-item has-text-white is-uppercase" v-smooth-scroll v-scroll-spy>Team</a>
-            <a href="#contact" class="nav-item has-text-white is-uppercase" v-smooth-scroll v-scroll-spy>Contact</a>
+            <a href="#about" class="navbar-item has-text-white is-uppercase" v-smooth-scroll v-scroll-spy>Projects</a>
+            <a href="#team" class="navbar-item has-text-white is-uppercase" v-smooth-scroll v-scroll-spy>Team</a>
+            <a href="#contact" class="navbar-item has-text-white is-uppercase" v-smooth-scroll v-scroll-spy>Contact</a>
 
             <a class="navbar-item has-text-white" href="https://github.com/pulsardev" target="_blank">
               <span class="icon"><i class="fa fa-github"></i></span>
@@ -117,7 +117,7 @@
     padding: 0;
   }
 
-  .c-nav-item--is-active {
+  .c-navbar-item--is-active {
     background: $grey-darker
   }
 </style>
