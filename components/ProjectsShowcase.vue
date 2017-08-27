@@ -14,7 +14,7 @@
     <div class="c-projects__showcase tile">
       <div class="tile is-5 is-vertical">
         <figure class="c-projects__thumbnail image tile">
-          <img src="~/assets/images/netsix.png" alt="Netsix">
+          <img src="~/assets/images/projects/netsix.png" alt="Netsix">
           <figcaption class="has-text-centered">
             <h2 class="title">Netsix</h2>
             <p class="subtitle">Stream videos to your friends.</p>
@@ -22,7 +22,7 @@
         </figure>
 
         <figure class="c-projects__thumbnail image tile">
-          <img src="~/assets/images/mendelable.png" alt="Mendelable">
+          <img src="~/assets/images/projects/mendelable.png" alt="Mendelable">
           <figcaption class="has-text-centered">
             <h2 class="title">Mendelable</h2>
             <p class="subtitle">A modern and dynamic periodic table.</p>
@@ -32,7 +32,7 @@
 
       <div class="tile">
         <figure class="c-projects__thumbnail image tile">
-          <img src="~/assets/images/freatle.png" alt="Freatle">
+          <img src="~/assets/images/projects/freatle.png" alt="Freatle">
           <figcaption class="has-text-centered">
             <h2 class="title">Freatle</h2>
             <p class="subtitle">Let's party! Who brings what?</p>

@@ -1,6 +1,11 @@
 <template>
-  <section id="pulsar" class="hero is-dark is-fullheight has-text-centered">
+  <section id="pulsar" class="hero is-dark is-fullheight has-text-centered" style="background-color: black">
     <div class="hero-body">
+      <img class="c-hero-image"
+           src="/images/pulsar-bg-1920w.jpg"
+           srcset="/images/pulsar-bg-1280w.jpg 1280w, /images/pulsar-bg-1920w.jpg 1920w"
+           alt="Pulsar">
+
       <canvas id="space" class="space"></canvas>
 
       <div class="container">
@@ -121,6 +126,11 @@
 </script>
 
 <style lang="scss" scoped>
+  .hero {
+    position: relative;
+    overflow: hidden;
+  }
+
   .title {
     font-size: 6rem;
     color: white;
@@ -129,25 +139,8 @@
     margin-left: 4rem;
   }
 
-  .hero {
-    background: url(/images/pulsar-bg.jpg) no-repeat top center scroll;
-    filter: grayscale(1);
-  }
-
   .button {
     border-radius: 50%;
-  }
-
-  .hero-body:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: black;
-    opacity: 0.5;
   }
 
   .space {
@@ -155,5 +148,16 @@
     top: 0;
     left: 0;
     mix-blend-mode: screen;
+  }
+
+  .c-hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    opacity: 0.5
   }
 </style>
