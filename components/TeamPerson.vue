@@ -2,7 +2,7 @@
   <div class="card has-text-left">
     <div class="card-image">
       <figure class="image is-4by3">
-        <img :src="person.image" alt="Image">
+        <img class="c-team__image" :src="person.image" alt="Image">
       </figure>
     </div>
     <div class="card-content">
@@ -39,5 +39,9 @@
 <style lang="scss" scoped>
   .c-avatar {
     border-radius: 50%;
+  }
+
+  .c-team__image {
+    object-fit: cover;
   }
 </style>

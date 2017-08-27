@@ -1,7 +1,7 @@
 <template>
   <section id="contact" class="section is-medium" style="background-color: rgba(0, 0, 0, 0.7)">
     <div class="container">
-      <h1 class="title is-spaced has-text-centered has-text-grey-lighter">Contact</h1>
+      <h1 class="title is-spaced has-text-centered has-text-grey-lighter">Contact Us</h1>
 
       <div class="field">
         <label class="label">Name</label>

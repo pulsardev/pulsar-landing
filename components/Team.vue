@@ -2,7 +2,7 @@
   <section id="team" class="hero is-medium" style="background-color: whitesmoke">
     <div class="hero-body">
       <div class="container has-text-centered">
-        <h1 class="title is-spaced">Team</h1>
+        <h1 class="title is-spaced">The Team</h1>
 
         <div class="columns">
           <div class="column">
@@ -35,7 +35,7 @@
             id: 'mmorainville',
             name: 'Mathieu Morainville',
             avatar: 'https://avatars1.githubusercontent.com/u/1155743?v=4&s=460',
-            image: 'http://bulma.io/images/placeholders/1280x960.png',
+            image: '/images/team/superman.png',
             description: '<em>Vueman</em>',
             skills: ['Vue.js', 'JavaScript', 'Design', 'Node.js']
           },
@@ -43,7 +43,7 @@
             id: 'sylver-john',
             name: 'Sylver-John Imhoff',
             avatar: 'https://avatars1.githubusercontent.com/u/6161547?v=4&s=460',
-            image: 'http://bulma.io/images/placeholders/1280x960.png',
+            image: '/images/team/batman.jpg',
             description: '<em>Golang lover</em>',
             skills: ['Golang', 'Vue.js', 'JavaScript']
           },
@@ -51,7 +51,7 @@
             id: 'Outpox',
             name: 'Guillaume Migeon',
             avatar: 'https://avatars2.githubusercontent.com/u/3439246?v=4&s=460',
-            image: 'http://bulma.io/images/placeholders/1280x960.png',
+            image: '/images/team/flash.jpg',
             description: '<em>Extension maker</em>',
             skills: ['Vue.js', 'JavaScript', 'Node.js']
           }
