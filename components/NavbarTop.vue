@@ -1,37 +1,35 @@
 <template>
-  <div class="c-navbar-top" ref="c-navbar-top">
+  <nav class="navbar is-dark has-shadow c-navbar-top" ref="c-navbar-top">
     <div class="container">
-      <nav class="navbar is-transparent has-shadow">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="#pulsar" v-smooth-scroll v-scroll-spy>
-            <h1 class="title is-4 is-uppercase has-text-white">Pulsar</h1>
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#pulsar" v-smooth-scroll v-scroll-spy>
+          <h1 class="title is-4 is-uppercase has-text-white">Pulsar</h1>
+        </a>
+
+        <div class="navbar-burger burger" :class="{ 'is-active': isNavbarOpen }" @click="toggleNavbar">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="navbar-menu" :class="{ 'is-active': isNavbarOpen }">
+        <div class="navbar-end">
+          <a href="#about" class="navbar-item is-uppercase" v-smooth-scroll v-scroll-spy>Projects</a>
+          <a href="#team" class="navbar-item is-uppercase" v-smooth-scroll v-scroll-spy>Team</a>
+          <a href="#contact" class="navbar-item is-uppercase" v-smooth-scroll v-scroll-spy>Contact</a>
+
+          <a class="navbar-item" href="https://medium.com/@pulsar.dev.team" target="_blank" rel="noopener">
+            <span class="icon"><i class="fa fa-medium"></i></span>
           </a>
 
-          <div class="navbar-burger burger" data-target="c-navbar-top__menu" ref="c-navbar-top__toggle-button" @click="toggleMenu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+          <a class="navbar-item" href="https://github.com/pulsardev" target="_blank" rel="noopener">
+            <span class="icon"><i class="fa fa-github"></i></span>
+          </a>
         </div>
-
-        <div id="c-navbar-top__menu" ref="c-navbar-top__menu" class="navbar-menu">
-          <div class="navbar-end">
-            <a href="#about" class="navbar-item has-text-white is-uppercase" v-smooth-scroll v-scroll-spy>Projects</a>
-            <a href="#team" class="navbar-item has-text-white is-uppercase" v-smooth-scroll v-scroll-spy>Team</a>
-            <a href="#contact" class="navbar-item has-text-white is-uppercase" v-smooth-scroll v-scroll-spy>Contact</a>
-
-            <a class="navbar-item has-text-white" href="https://medium.com/@pulsar.dev.team" target="_blank" rel="noopener">
-              <span class="icon"><i class="fa fa-medium"></i></span>
-            </a>
-
-            <a class="navbar-item has-text-white" href="https://github.com/pulsardev" target="_blank" rel="noopener">
-              <span class="icon"><i class="fa fa-github"></i></span>
-            </a>
-          </div>
-        </div>
-      </nav>
+      </div>
     </div>
-  </div>
+  </nav>
 </template>
 
 <script>
@@ -40,7 +38,8 @@
     data () {
       return {
         lastKnownScrollPosition: 0,
-        ticking: false
+        ticking: false,
+        isNavbarOpen: false
       }
     },
     methods: {
@@ -56,17 +55,8 @@
           }
         }
       },
-      toggleMenu () {
-        let toggleButton = this.$refs['c-navbar-top__toggle-button']
-        let menu = this.$refs['c-navbar-top__menu']
-
-        if (toggleButton.classList.contains('is-active')) {
-          toggleButton.classList.remove('is-active')
-          menu.classList.remove('is-active')
-        } else {
-          toggleButton.classList.add('is-active')
-          menu.classList.add('is-active')
-        }
+      toggleNavbar () {
+        this.isNavbarOpen = !this.isNavbarOpen
       },
       throttleScrollHandling () {
         this.lastKnownScrollPosition = window.scrollY
@@ -102,7 +92,7 @@
   .navbar {
     font-family: $family-secondary;
 
-    &.is-transparent {
+    &.is-dark {
       background-color: transparent;
     }
   }
@@ -112,17 +102,20 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
-    transition: background .25s ease-in-out, padding .25s ease-in-out;
-    padding: 1rem 0;
+    z-index: 5;
+    transition: background .25s ease-in-out, margin .25s ease-in-out;
+    margin: 1rem 0;
   }
 
   .c-navbar-top--has-background {
-    background-color: $black;
-    padding: 0;
+    margin: 0;
+
+    &.is-dark {
+      background-color: $black;
+    }
   }
 
-  .c-navbar-item--is-active {
+  /*.c-navbar-item--is-active {
     background: $grey-darker
-  }
+  }*/
 </style>

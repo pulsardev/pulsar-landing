@@ -2,7 +2,7 @@ import Vue from 'vue'
 
 require('intersection-observer')
 
-let activeClass = 'c-navbar-item--is-active'
+let activeClass = 'is-active'
 let links = {}
 
 let observer = new IntersectionObserver(function (observables) {
