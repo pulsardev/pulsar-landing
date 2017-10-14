@@ -92,7 +92,8 @@
 </script>
 
 <style lang="scss" scoped>
-  @import "~assets/scss/main";
+  @import "~bulma/sass/utilities/initial-variables";
+  @import "~assets/scss/custom";
 
   .navbar {
     font-family: $family-secondary;
