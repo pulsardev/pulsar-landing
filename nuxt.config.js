@@ -36,7 +36,13 @@ module.exports = {
     },
     vendor: [
       'vee-validate'
-    ]
+    ],
+    extractCSS: true,
+    postcss: {
+      plugins: {
+        'postcss-custom-properties': false
+      }
+    }
   },
   css: [
     '@/assets/scss/main.scss'

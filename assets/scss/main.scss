@@ -17,10 +17,5 @@ $fa-font-path:   "~font-awesome/fonts";
 
 @import "~font-awesome/scss/font-awesome";
 
-// Custom variables
-$family-secondary: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-// Custom Bulma style
-.title {
-  font-family: $family-secondary;
-}
+// Custom style
+@import "custom";

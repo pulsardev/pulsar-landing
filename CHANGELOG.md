@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/pulsardev/pulsar-landing/compare/v1.0.0...v1.0.1) (2017-10-14)
+
+
+### Bug Fixes
+
+* change the favicon ([97fb0a8](https://github.com/pulsardev/pulsar-landing/commit/97fb0a8))
+* correct the email label ([20b26ac](https://github.com/pulsardev/pulsar-landing/commit/20b26ac))
+
+
+
 <a name="1.0.0"></a>
 # 1.0.0 (2017-08-27)
 

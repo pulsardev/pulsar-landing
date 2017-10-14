@@ -2,8 +2,8 @@
   <section id="pulsar" class="hero is-dark is-fullheight has-text-centered" style="background-color: black">
     <div class="hero-body">
       <img class="c-hero-image"
-           src="/images/pulsar-bg-1920w.jpg"
-           srcset="/images/pulsar-bg-1280w.jpg 1280w, /images/pulsar-bg-1920w.jpg 1920w"
+           :src="require('@/assets/images/pulsar-bg-1920w.jpg')"
+           :srcset="require('@/assets/images/pulsar-bg-1280w.jpg') + ' 1280w, ' + require('@/assets/images/pulsar-bg-1920w.jpg') + ' 1920w'"
            alt="Pulsar">
 
       <canvas id="space" class="space"></canvas>

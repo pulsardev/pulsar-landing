@@ -15,11 +15,11 @@
         <div class="field">
           <label class="label" for="email">Email</label>
           <div class="control has-icons-left has-icons-right">
-            <input v-validate="'required|email'" v-model="email" class="input" :class="{ 'is-danger': errors.has('_replyto') }" id="email" name="_replyto" type="text" placeholder="Email" required>
+            <input v-validate="'required|email'" v-model="email" class="input" :class="{ 'is-danger': errors.has('email') }" id="email" name="email" type="text" placeholder="Email" required>
             <span class="icon is-small is-left has-text-grey"><i class="fa fa-envelope"></i></span>
-            <span v-show="errors.has('_replyto')" class="icon is-small is-right has-text-grey"><i class="fa fa-warning"></i></span>
+            <span v-show="errors.has('email')" class="icon is-small is-right has-text-grey"><i class="fa fa-warning"></i></span>
           </div>
-          <span v-show="errors.has('_replyto')" class="help is-danger">{{ errors.first('_replyto') }}</span>
+          <span v-show="errors.has('email')" class="help is-danger">{{ errors.first('email') }}</span>
         </div>
 
         <div class="field">
@@ -45,7 +45,9 @@
 
 <script>
   export default {
-    $validates: true,
+    $_veeValidate: {
+      validator: 'new'
+    },
     name: 'contact',
     data () {
       return {

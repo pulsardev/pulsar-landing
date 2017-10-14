@@ -31,12 +31,11 @@
 </template>
 
 <script>
-  import Logo from '~/components/Logo.vue'
-  import NavbarTop from '../components/NavbarTop.vue'
-  import HeroIndex from '../components/HeroIndex.vue'
-  import Contact from '../components/Contact.vue'
-  import ProjectsShowcase from '../components/ProjectsShowcase.vue'
-  import Team from '../components/Team.vue'
+  import NavbarTop from '~/components/NavbarTop.vue'
+  import HeroIndex from '~/components/HeroIndex.vue'
+  import Contact from '~/components/Contact.vue'
+  import ProjectsShowcase from '~/components/ProjectsShowcase.vue'
+  import Team from '~/components/Team.vue'
 
   export default {
     components: {
@@ -44,8 +43,7 @@
       ProjectsShowcase,
       Contact,
       HeroIndex,
-      NavbarTop,
-      Logo
+      NavbarTop
     }
   }
 </script>
