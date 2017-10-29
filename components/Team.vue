@@ -38,7 +38,7 @@
             image: '/images/team/superman.png',
             description: '<em>Vueman</em>',
             skills: ['Vue.js', 'JavaScript', 'Design', 'Node.js'],
-            link: ''
+            link: 'https://github.com/mmorainville'
           },
           {
             id: 'sylver-john',
