@@ -37,7 +37,8 @@
             avatar: 'https://avatars1.githubusercontent.com/u/1155743?v=4&s=460',
             image: '/images/team/superman.png',
             description: '<em>Vueman</em>',
-            skills: ['Vue.js', 'JavaScript', 'Design', 'Node.js']
+            skills: ['Vue.js', 'JavaScript', 'Design', 'Node.js'],
+            link: ''
           },
           {
             id: 'sylver-john',
@@ -45,7 +46,8 @@
             avatar: 'https://avatars1.githubusercontent.com/u/6161547?v=4&s=460',
             image: '/images/team/batman.jpg',
             description: '<em>Golang lover</em>',
-            skills: ['Golang', 'Vue.js', 'JavaScript']
+            skills: ['Golang', 'Vue.js', 'JavaScript'],
+            link: ''
           },
           {
             id: 'Outpox',
@@ -53,7 +55,8 @@
             avatar: 'https://avatars2.githubusercontent.com/u/3439246?v=4&s=460',
             image: '/images/team/flash.jpg',
             description: '<em>Extension maker</em>',
-            skills: ['Vue.js', 'JavaScript', 'Node.js']
+            skills: ['Vue.js', 'JavaScript', 'Node.js'],
+            link: ''
           }
         ]
       }
