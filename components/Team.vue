@@ -56,7 +56,7 @@
             image: '/images/team/flash.jpg',
             description: '<em>Extension maker</em>',
             skills: ['Vue.js', 'JavaScript', 'Node.js'],
-            link: ''
+            link: 'https://github.com/Outpox'
           }
         ]
       }
