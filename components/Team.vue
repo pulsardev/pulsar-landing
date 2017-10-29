@@ -47,7 +47,7 @@
             image: '/images/team/batman.jpg',
             description: '<em>Golang lover</em>',
             skills: ['Golang', 'Vue.js', 'JavaScript'],
-            link: ''
+            link: 'https://github.com/sylver-john'
           },
           {
             id: 'Outpox',
