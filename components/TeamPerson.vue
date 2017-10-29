@@ -2,11 +2,11 @@
   <div class="card has-text-left">
     <div class="card-image">
       <a :href="person.link" target="_blank" rel="noopener">
-      <figure class="image is-4by3">
-        <img class="c-team__image" :src="person.image" alt="Image">
-      </figure>
+        <figure class="image is-4by3">
+          <img class="c-team__image" :src="person.image" alt="Image">
+        </figure>
+      </a>
     </div>
-    </a>
     <div class="card-content">
       <div class="media">
         <div class="media-left">
