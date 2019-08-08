@@ -33,17 +33,17 @@
 <script>
   import NavbarTop from '~/components/NavbarTop.vue'
   import HeroIndex from '~/components/HeroIndex.vue'
-  import Contact from '~/components/Contact.vue'
   import ProjectsShowcase from '~/components/ProjectsShowcase.vue'
   import Team from '~/components/Team.vue'
+  import Contact from '~/components/Contact.vue'
 
   export default {
     components: {
-      Team,
-      ProjectsShowcase,
-      Contact,
+      NavbarTop,
       HeroIndex,
-      NavbarTop
+      ProjectsShowcase,
+      Team,
+      Contact
     }
   }
 </script>

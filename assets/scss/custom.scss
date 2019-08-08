@@ -2,6 +2,20 @@
 $family-secondary: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // Custom Bulma style
+.tile.is-gapless {
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .tile.is-parent {
+    padding: 0;
+  }
+
+  .tile.is-vertical > .tile.is-child {
+    margin-bottom: 0 !important;
+  }
+}
+
 .title {
   font-family: $family-secondary;
 }

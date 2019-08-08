@@ -11,9 +11,9 @@
       </div>
     </section>
 
-    <div class="c-projects__showcase tile">
-      <div class="tile is-5 is-vertical">
-        <figure class="c-projects__thumbnail image tile" @click="openUrl('https://github.com/pulsardev/netsix')">
+    <div class="c-projects__showcase tile is-gapless is-ancestor">
+      <div class="tile is-5 is-vertical is-parent">
+        <figure class="c-projects__thumbnail image tile is-child" @click="openUrl('https://github.com/pulsardev/netsix')">
           <img src="~/assets/images/projects/netsix.png" alt="Netsix">
           <figcaption class="has-text-centered">
             <h2 class="title">Netsix</h2>
@@ -21,7 +21,7 @@
           </figcaption>
         </figure>
 
-        <figure class="c-projects__thumbnail image tile" @click="openUrl('https://github.com/pulsardev/mendelable')">
+        <figure class="c-projects__thumbnail image tile is-child" @click="openUrl('https://github.com/pulsardev/mendelable')">
           <img src="~/assets/images/projects/mendelable.png" alt="Mendelable">
           <figcaption class="has-text-centered">
             <h2 class="title">Mendelable</h2>
@@ -30,8 +30,8 @@
         </figure>
       </div>
 
-      <div class="tile">
-        <figure class="c-projects__thumbnail image tile" @click="openUrl('https://freatle.surge.sh/')">
+      <div class="tile is-parent">
+        <figure class="c-projects__thumbnail image tile is-child" @click="openUrl('https://freatle.surge.sh/')">
           <img src="~/assets/images/projects/freatle.png" alt="Freatle">
           <figcaption class="has-text-centered">
             <h2 class="title">Freatle</h2>
@@ -66,7 +66,6 @@
   .c-projects__thumbnail {
     position: relative;
     overflow: hidden;
-    height: 100%;
     cursor: pointer;
 
     img {

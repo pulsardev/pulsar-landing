@@ -17,22 +17,22 @@
     "@nuxtjs/google-analytics": "^1.0.0",
     "bulma": "^0.5.3",
     "font-awesome": "^4.7.0",
-    "intersection-observer": "^0.4.2",
-    "nuxt": "^1.0.0-rc9",
+    "intersection-observer": "^0.4.3",
+    "nuxt": "^2.8.1",
     "smoothscroll-polyfill": "^0.3.6",
-    "vee-validate": "^2.0.0-rc.19"
+    "vee-validate": "^2.2.14"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
-    "eslint": "^4.8.0",
+    "eslint": "^4.19.1",
     "eslint-config-standard": "^10.2.1",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-html": "^3.2.2",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-node": "^5.2.0",
-    "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.6"
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^6.0.7"
   }
 }
