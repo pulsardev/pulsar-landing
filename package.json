@@ -18,7 +18,7 @@
     "bulma": "^0.5.3",
     "font-awesome": "^4.7.0",
     "intersection-observer": "^0.4.3",
-    "nuxt": "^2.8.1",
+    "nuxt": "^2.15.8",
     "smoothscroll-polyfill": "^0.3.6",
     "vee-validate": "^2.2.14"
   },
